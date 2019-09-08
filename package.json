@@ -18,7 +18,8 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "generate:typings": "ts-node src/generate-typings",
-    "fixtures:load": "fixtures --config ./.env --require=dotenv/config --require=ts-node/register --require=tsconfig-paths/register"
+    "fixtures:load": "fixtures --config ./.env --require=dotenv/config --require=ts-node/register --require=tsconfig-paths/register",
+    "graphql:dist": "copyfiles --up 1 src/**/*.graphql dist/"
   },
   "dependencies": {
     "@nestjs/common": "^6.0.0",
@@ -45,6 +46,7 @@
     "@types/jest": "24.0.11",
     "@types/node": "11.13.4",
     "@types/supertest": "2.0.7",
+    "copyfiles": "^2.1.1",
     "jest": "24.7.1",
     "prettier": "1.17.0",
     "supertest": "4.0.2",

@@ -10,6 +10,7 @@ import {UserModule} from "./user/app/user.module";
         GraphQLModule.forRoot({
             typePaths: ['./**/*.graphql'],
             installSubscriptionHandlers: true,
+            playground: true,
             context: ({req}) => ({req}),
         }),
     ],

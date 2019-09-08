@@ -1,10 +1,8 @@
 version: '3.4'
 services:
-
   postgres:
     image: postgres
     user: "root"
-    restart: always
     environment:
       POSTGRES_DB: switchit_simple_cqrs_model
       POSTGRES_USER: postgres
