@@ -22,7 +22,7 @@
 ## Description
 
 This repository is for illustrating our blog article that can be found here: 
-[A simplified CQRS model with NestJS]()
+[A simplified CQRS model with NestJS]() (I am sorry the article is in french)
 
 ## Installation
 
