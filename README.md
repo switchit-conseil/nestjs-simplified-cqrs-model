@@ -25,6 +25,7 @@ This repository is for illustrating our blog article that can be found here:
 
 ```bash
 $ yarn install
+$ docker stack deploy switchit --compose-file=./docker-composer.yml
 ```
 
 ## Running the app
