@@ -67,4 +67,4 @@ This is an MIT-licensed open source project. It is for demonstration only for th
 
 ## License
 
-  This project is [MIT licensed](LICENSE).
+  This project is [MIT licensed](LICENSE.md).
