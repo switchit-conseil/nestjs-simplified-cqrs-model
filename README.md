@@ -9,7 +9,7 @@
 <p align="center"><strong>We build your next generation software !</strong></p>
 
 <p align="center">
-**Built with** 
+<strong>Built with</strong>
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@ This repository is for illustrating our blog article that can be found here:
 
 ```bash
 $ yarn install
-$ docker stack deploy switchit --compose-file=./docker-composer.yml
+$ docker stack deploy switchit --compose-file=./docker-compose.yml
 ```
 
 ## Running the app
