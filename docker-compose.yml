@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+
+  postgres:
+    image: postgres
+    user: "root"
+    restart: always
+    environment:
+      POSTGRES_DB: switchit_simple_cqrs_model
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+    - "./var/lib/postgres:/var/lib/postgresql:cached"

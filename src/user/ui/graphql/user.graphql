@@ -1,0 +1,17 @@
+type User {
+    id: ID!
+    email: String!
+}
+
+type Query {
+    findUser(id: String!): User
+}
+
+input RegisterUserInput  {
+    email: String!
+    password: String!
+}
+
+type Mutation {
+    registerUser(registerUser: RegisterUserInput): User
+}
