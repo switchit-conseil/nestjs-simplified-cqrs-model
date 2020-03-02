@@ -16,7 +16,7 @@ export class UserRepository implements UserRepositoryInterface {
     }
 
     async find(id: string): Promise<UserEntity> {
-        const user = this.repository.findOne(id);
+        const user = await this.repository.findOne(id);
         if (!user) {
             throw UserNotFoundException.withId(id);
         }
